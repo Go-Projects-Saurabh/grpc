@@ -1,3 +1,3 @@
 #:/bin/bash
 
-protoc great/greatpb/great.proto --go_out=plugins=grpc:.
+protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
