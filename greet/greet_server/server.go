@@ -5,6 +5,7 @@ import (
 	"log"
 	"net"
 
+	"github.com/saurabhsingh1408/grpc_greet/greet/greetpb"
 	"google.golang.org/grpc"
 )
 
@@ -19,6 +20,6 @@ func main() {
 	}
 	fmt.Println(lis)
 	grpc.NewServer()
-	//greetpb.RegisterGreetServiceServer()
+	greetpb.RegisterGreetServiceServer()
 
 }
