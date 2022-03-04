@@ -8,6 +8,8 @@ import (
 	"google.golang.org/grpc"
 )
 
+type server struct{}
+
 func main() {
 	fmt.Println("Hello")
 
@@ -17,5 +19,6 @@ func main() {
 	}
 	fmt.Println(lis)
 	grpc.NewServer()
-	
+	//greetpb.RegisterGreetServiceServer()
+
 }
