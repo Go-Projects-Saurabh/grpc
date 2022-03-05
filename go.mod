@@ -1,4 +1,4 @@
-module github.com/saurabhsingh1408/grpc_greet/greet/greetpb
+module github.com/saurabhsingh1408/grpc_greet
 
 go 1.17
 
