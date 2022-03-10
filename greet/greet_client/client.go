@@ -27,10 +27,7 @@ func main() {
 func doUnary(c greetpb.GreetServiceClient) {
 	fmt.Println("Starting to do Unary RPC ...")
 	req := &greetpb.GreetRequest{
-		Greeting: &greetpb.Greeting{
-			FirstName: "Saurabh",
-			LastName:  "Singh",
-		},
+		Greeting: &greetpb.Greeting{FirstName: "Saurabh", LastName: "Singh"},
 	}
 
 	resp, err := c.Greet(context.Background(), req)
