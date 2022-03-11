@@ -17,6 +17,15 @@ message SumResponse {
     int64 result = 1;
 }
 
+message PrimeRequest {
+    int64 num = 1;
+}
+
+message PrimeResponse {
+    int64 result = 1;
+}
+
 service CalculatorService {
     rpc calculate(SumRequest) returns (SumResponse) {};
+    rpc PrimeNumberDecomposition(PrimeRequest) returns (stream PrimeResponse) {};
 }
